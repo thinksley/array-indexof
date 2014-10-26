@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+
+<script type="text/javascript">
+
+var indexOf = [].indexOf || function( elem ) {
+		var i = 0,
+			len = this.length;
+
+		for ( ; i < len; i++ ) {
+			if ( this[i] === elem ) {
+				return i;
+			}
+		}
+		return -1;
+	}
+
+var inArray=function( elem, arr, i ) {
+	return arr == null ? -1 : indexOf.call( arr, elem, i );
+}
+
+var arr1=['a','aa','bb'];
+alert(inArray('bb',arr1))
+</script>
+</head>
+<body>
+	
+</body>
+</html>
